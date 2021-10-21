@@ -1,13 +1,16 @@
 
 var html = '<ul>\
 <li>\
-  <a href="#">link</a>\
+  <a href="index.html">Hjem</a>\
 </li>\
 <li>\
-  <a href="#">link</a>\
+  <a href="kontakt_oss.html">Kontakt</a>\
 </li>\
 <li>\
-  <a href="#">link</a>\
+  <a href="om_gaarden.html">Gården</a>\
+</li>\
+<li>\
+  <a href="produkter.html">Produkter/Tjenester</a>\
 </li>\
 </ul>';
 
