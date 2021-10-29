@@ -1,17 +1,18 @@
+var html = `
+<div class="logo_main"><a href="index.html">BETTUM GÅRD</a></div>
+<ul>
+<li class="logo_mobile">
+<a href="index.html">BETTUM GÅRD</a>\
+</li>
+<li>
+<a href="om_gaarden.html">OM OSS</a>
+</li>
+<li>
+<a href="produkter.html">PRODUKTER</a>
+</li>
+<li>
+  <a href="kontakt_oss.html">KONTAKT OSS</a>
+</li>
+</ul>`;
 
-var html = '<ul>\
-<li>\
-  <a href="index.html">Hjem</a>\
-</li>\
-<li>\
-  <a href="kontakt_oss.html">Kontakt</a>\
-</li>\
-<li>\
-  <a href="om_gaarden.html">Gården</a>\
-</li>\
-<li>\
-  <a href="produkter.html">Produkter/Tjenester</a>\
-</li>\
-</ul>';
-
-document.getElementById('navbar').innerHTML = html;
+document.getElementById("navbar").innerHTML = html;
