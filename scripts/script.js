@@ -1,8 +1,6 @@
 
-var html = '<ul>\
-<li>\
-  <a href="index.html">Hjem</a>\
-</li>\
+var html = '<div><a href="index.html">Hjem</a>\</div>\
+<ul>\
 <li>\
   <a href="kontakt_oss.html">Kontakt</a>\
 </li>\
