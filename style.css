@@ -14,7 +14,12 @@ nav {
     background-color: #4d5619;
     font-weight: bold;
     font-size: 26px;
+}
+
+nav a,
+footer a {
     color: #fff;
+    text-decoration: none;
 }
 
 #logo {
@@ -24,7 +29,6 @@ nav {
 footer {
     background-color: #4d5619;
     font-size: 26px;
-    color: #fff;
 }
 
 h1 {
