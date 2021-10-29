@@ -1,15 +1,15 @@
-
-var html = '<div><a href="index.html">Hjem</a>\</div>\
+var html =
+    '<div><a href="index.html">BETTUM GÅRD</a></div>\
 <ul>\
 <li>\
-  <a href="kontakt_oss.html">Kontakt</a>\
+<a href="om_gaarden.html">OM OSS</a>\
 </li>\
 <li>\
-  <a href="om_gaarden.html">Gården</a>\
+<a href="produkter.html">PRODUKTER</a>\
 </li>\
 <li>\
-  <a href="produkter.html">Produkter/Tjenester</a>\
+  <a href="kontakt_oss.html">KONTAKT OSS</a>\
 </li>\
 </ul>';
 
-document.getElementById('navbar').innerHTML = html;
+document.getElementById("navbar").innerHTML = html;
