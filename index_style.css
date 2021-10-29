@@ -1,5 +1,52 @@
 
-div#index_bilde_m_logo {
-    height: 500px;
+* {
+    box-sizing: border-box;
+}
+/* forsidebilde */
+#index_bilde_m_logo {
+    width: 90%;
+    margin: auto;
+}
+
+/* infotekst om gården */
+#index_om_gaarden {
+    width: 90%;
+    margin: auto;
+}
+
+/* box om produkter */
+#index_produkter {
+    width: 90%;
+    /* border: solid 1px black; */
+    margin: auto;
+    margin-top: 20px;
+}
+
+/* ordner så bilderaden står riktig */
+.img_column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+    display: block;
+    /* border: solid 1px black; */
+    text-align: center;
+
+}
+.img_column img {
     width: 100%;
+    height: 100%;
+}
+/* gjør så resten av nettsiden etter index_produkter kommer nedenfor */
+#index_produkter::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  /* gir bildene av produktuer hvitt skjær når man hovrer over*/
+a {
+    text-decoration: none;
+}
+a:hover{
+    opacity: 0.8;
 }
