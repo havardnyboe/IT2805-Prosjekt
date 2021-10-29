@@ -1,13 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Heebo");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500;600;700;800;900&display=swap");
 * {
     margin: 0;
     padding: 0;
     color: #000;
     font-family: "Heebo", sans-serif;
+    font-weight: 400;
 }
 
 body {
     background-color: #f4f1e6;
+}
+
+main {
+    margin: 0 auto;
+    width: 80%;
+    min-height: calc(100vh - 6rem - 7rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 nav {
@@ -16,6 +26,7 @@ nav {
     font-size: 22px;
     height: 6rem;
     display: flex;
+    flex-direction: ;
     justify-content: center;
     box-shadow: 0px 0px 10px #000;
 }
@@ -49,12 +60,18 @@ footer {
     box-shadow: 0px 0px 4px #000;
 }
 
+footer b {
+    font-weight: 600;
+}
+
 h1 {
     font-size: 36px;
+    font-weight: 600;
 }
 
 h2 {
     font-size: 26px;
+    font-weight: 600;
 }
 
 p {
