@@ -3,9 +3,28 @@
     box-sizing: border-box;
 } */
 
-#index_bilde_m_logo img {
+#top_box {
+    height:100vh;
+    overflow: hidden;
+}
+
+#top_box img {
     width: 100%;
-    margin: 10px 0px 10px 0px;
+    height: calc(100vh - 6rem);
+}
+
+#logo img {
+    position: absolute;
+    height: 180px;
+    width: 330px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main#main_index {
+    /* height: calc(100vh - 7rem); */
+    height: 100vh;
 }
 
 /* box om produkter */
@@ -19,21 +38,21 @@
     width: 33.33%;
     padding: 5px;
     display: block;
-    /* border: solid 1px black; */
     text-align: center;
     box-sizing: border-box;
 }
 .img_column img {
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
-/* gjør så resten av nettsiden etter index_produkter kommer nedenfor */
-#index_produkter::after {
+/* gjør så resten av nettsiden etter index_produkter kommer nedenfor, trengte
+tidligere, men ikke nå lengre */
+/* #index_produkter::after {
     content: "";
     clear: both;
     display: table;
-  }
+  } */
 
   /* gir bildene av produktuer hvitt skjær når man hovrer over*/
 a {
@@ -41,4 +60,40 @@ a {
 }
 a:hover{
     opacity: 0.8;
+}
+
+@media only screen and (max-width: 768px) {
+    main#main_index {
+        width: 100%;
+        height: auto;
+    }
+
+    #top_box img {
+        height: calc(100vh - 14rem);
+    }
+
+    #logo img {
+        position: absolute;
+        height: 120px;
+        width: 220px;
+        top: 60%;
+    }
+
+    #index_om_gaarden {
+        margin: 10px 10px 0px 10px;
+        text-align: center;
+    }
+
+    #index_produkter {
+        /* margin-top: 20px; */
+        text-align: center;
+    }
+
+    .img_column {
+        width: 80%;
+        /* max-height: 33.3%; */
+        margin: auto;
+        float: none;
+    }
+
 }
