@@ -81,15 +81,18 @@ footer b {
 h1 {
     font-size: 36px;
     font-weight: 600;
+    margin-top: 1em;
 }
 
 h2 {
     font-size: 26px;
     font-weight: 600;
+    margin-top: 1em;
 }
 
 p {
     font-size: 16px;
+    margin-top: 1em;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -101,6 +104,7 @@ p {
 @media only screen and (max-width: 768px) {
     main {
         width: 100%;
+        margin: 1rem 3rem;
     }
 
     .logo_main {
@@ -128,7 +132,7 @@ p {
 
     footer {
         height: min-content;
-        padding: 0 5rem;
+        padding: 2rem 0;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
