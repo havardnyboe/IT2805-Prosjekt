@@ -15,8 +15,8 @@
 
 #logo img {
     position: absolute;
-    height: 180px;
-    width: 330px;
+    height: 300px;
+    width: auto;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -24,8 +24,84 @@
 
 main#main_index {
     /* height: calc(100vh - 7rem); */
-    height: 100vh;
+    height: 140vh;
 }
+
+/* om gården */
+
+#index_om_gaarden p {
+    font-size: 20px;
+}
+
+/* img slider */
+#img_slider_container {
+    margin: auto;
+    position: relative;
+}
+
+/* .img_slide {
+    display: none;
+} */
+
+.img_slide img {
+    max-width: 100%;
+    height: 500px;
+}
+
+.text_slide p {
+    padding: 10px 0px 10px 0px;
+    margin: 0px 0px 8px 0px;
+    bottom: -1px;
+    color: #ffffff;
+    background-color: rgba(211, 211, 211, 0.514);  
+    font-size: 20px;  
+    width: 100%;  
+    position: absolute;
+    text-align: center; 
+}
+#arrow_left, #arrow_right {  
+    cursor: pointer;  
+    position: absolute;  
+    top: calc(50% - 1.5em);  
+    width: auto;  
+    padding: 10px 10px 10px 20px;
+    color: rgb(245, 245, 245);  
+    font-weight: bold;  
+    font-size: 50px;  
+    transition: 0.3s ease;  
+    border-radius: 0 10px 10px 0;  
+} 
+#arrow_right {  
+    right: 0;  
+    border-radius: 10px 0 0 10px;
+    padding: 10px 20px 10px 10px; 
+}  
+#arrow_left:hover, #arrow_right:hover {  
+    background-color: rgba(173, 173, 173, 0.507);  
+}
+
+.img_slide {  
+    -webkit-animation-name: fade;  
+    -webkit-animation-duration: 1s;  
+    animation-name: fade;  
+    animation-duration: 1s;  
+}
+@-webkit-keyframes fade {  
+    from {  
+        opacity: .4  
+    }  
+    to {  
+        opacity: 1  
+    }  
+}  
+@keyframes fade {  
+    from {  
+        opacity: .4  
+    }  
+    to {  
+        opacity: 1  
+    }  
+}  
 
 /* box om produkter */
 #index_produkter {
@@ -40,10 +116,17 @@ main#main_index {
     display: block;
     text-align: center;
     box-sizing: border-box;
+    margin: 0px;
 }
 .img_column img {
     max-width: 100%;
     max-height: 100%;
+    border-radius: 10px;
+}
+.img_column p {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 22px;
 }
 
 /* gjør så resten av nettsiden etter index_produkter kommer nedenfor, trengte
@@ -59,6 +142,7 @@ a {
     text-decoration: none;
 }
 a:hover{
+    cursor: pointer;  
     opacity: 0.8;
 }
 
@@ -66,6 +150,7 @@ a:hover{
     main#main_index {
         width: 100%;
         height: auto;
+        margin: 1rem 0rem;
     }
 
     #top_box img {
@@ -84,6 +169,22 @@ a:hover{
         text-align: center;
     }
 
+    #img_slider_container {
+        text-align:initial;
+    }
+
+    .img_slide img {
+        max-width: 100%;
+        height: 300px;
+    }
+    .text_slide p {
+        font-size: 16px;
+    }
+
+    #arrow_left, #arrow_right {
+        font-size: 30px;
+    }
+
     #index_produkter {
         /* margin-top: 20px; */
         text-align: center;
@@ -96,4 +197,25 @@ a:hover{
         float: none;
     }
 
+    .img_column p {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 22px;
+    }
+
+}
+
+@media only screen and (max-width: 425px) {
+    .img_slide img {
+        max-width: 100%;
+        height: 200px;
+    }
+
+    .text_slide p {
+        font-size: 12px;
+    }
+
+    #arrow_left, #arrow_right {
+        font-size: 20px;
+    }
 }
