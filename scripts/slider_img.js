@@ -1,16 +1,16 @@
 
-let slide_index = 1;
+let slide_index = 0;
 
 displaySlides(slide_index);  
 
-function nextSlide(n) {  
-    displaySlides(slide_index += n);
-
+function nextSlide(i) {  
+    displaySlides(slide_index += i);
+    // clearTimeout(timeHandle)
 }  
 
-function currentSlide(n) {  
-    displaySlides(slide_index = n);  
-}  
+// function currentSlide(i) {  
+//     displaySlides(slide_index = i);  
+// }  
 
 function displaySlides(n) {  
     let i;  
@@ -29,11 +29,31 @@ document.onkeydown = keySlide;
 function keySlide(keypress){
     if (keypress.keyCode == "37"){
         nextSlide(-1)
+        clearTimer()
     }
     else if (keypress.keyCode == "39"){
         nextSlide(1)
+        clearTimer()
     }
 }
+
+// Lagt til en timer som slutter om skiftning av bilder skjer manuelt
+
+function timeSlide (){
+    nextSlide(1);
+    timeHandle = setTimeout(timeSlide, 5000);
+    console.log("biip.. timer changing slide")
+}
+
+    // clearTimer stopper timeren, og kjører den igang igjen etter 30 sek
+function clearTimer () {
+    clearTimeout(timeHandle)
+    console.log("Timer cleared")
+    setTimeout(timeSlide, 30000)
+}
+
+timeSlide()
+
 
     // insp fra:
     // https://www.c-sharpcorner.com/article/creating-an-image-slider-using-javascript-html-and-css-only/
