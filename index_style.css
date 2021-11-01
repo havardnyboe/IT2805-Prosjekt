@@ -22,10 +22,10 @@
     transform: translate(-50%, -50%);
 }
 
-main#main_index {
-    /* height: calc(100vh - 7rem); */
-    height: 140vh;
-}
+/* main#main_index {
+    height: calc(100vh - 7rem);
+
+} */
 
 /* om gården */
 
