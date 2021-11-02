@@ -11,6 +11,7 @@ main#main_index {
     max-width: 1010px;
     background-color: white;
     padding: 30px 50px 30px 50px;
+    box-shadow: 1px 1px 3px rgba(71, 71, 71, 0.767);
 }
 
 #top_box {
