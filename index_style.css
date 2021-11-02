@@ -18,9 +18,15 @@ main#main_index {
     overflow: hidden;
 }
 
-#top_box img {
+#top_box:hover{
+    cursor: pointer;
+}
+
+#index_bilde_m_logo img {
     width: 100%;
     height: calc(100vh - 6rem);
+    border: 2px solid black;
+    box-sizing: border-box;
 }
 
 #logo img {
@@ -42,7 +48,6 @@ div#move_down{
     border-radius: 50px;
 }
 div#move_down:hover {
-    cursor: pointer;
     opacity: 0.8;
 
 }
@@ -100,7 +105,7 @@ div#move_down:hover {
     width: 100%;  
     position: absolute;
     text-align: center;
-    border-radius: 0px 0px 20px 20px; 
+    border-radius: 0px 0px 15px 15px; 
 }
 #arrow_left, #arrow_right {  
     cursor: pointer;  
