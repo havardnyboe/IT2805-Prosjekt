@@ -11,8 +11,15 @@
   #produkter.img {
     max-width: 100%;
     height: auto;
-    
   }
+  /* span.anchor gjør refereringspunktet fra index smoothere */
+  span.anchor{
+    display: block;
+    height: 130px; 
+    margin-top: -130px; 
+    visibility: hidden;
+  }
+
   @media (max-width: 650px) {
     #produkter.main {
       display: block;
