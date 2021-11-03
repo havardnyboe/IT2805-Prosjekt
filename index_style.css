@@ -1,7 +1,4 @@
 
-/* * {
-    box-sizing: border-box;
-} */
 
 main#main_index {
     max-width: 1010px;
@@ -48,12 +45,6 @@ div#move_down:hover {
     opacity: 0.8;
 
 }
-/* #move_down p {
-    font-size: 40px;
-    margin: 0px;
-    transform: rotate(90deg);
-    text-align: justify;
-} */
 
 #move_down i {
         border: solid rgb(255, 255, 255);
@@ -62,11 +53,6 @@ div#move_down:hover {
         padding: 15px;
         transform: rotate(45deg);
 }
-
-/* main#main_index {
-    height: calc(100vh - 7rem);
-
-} */
 
 /* om gården */
 
@@ -168,22 +154,13 @@ div#move_down:hover {
     width: 100%;
     height: 80%;
     border-radius: 10px;
-    box-shadow: 0px 0px 3px rgba(71, 71, 71, 0.767);
+    box-shadow: 0px 1px 3px rgba(71, 71, 71, 0.767);
 }
 .img_column p {
     text-align: center;
     text-transform: uppercase;
     font-size: 22px;
 }
-
-/* gjør så resten av nettsiden etter index_produkter kommer nedenfor, trengte
-tidligere, men ikke nå lengre */
-/* #index_produkter::after {
-    content: "";
-    clear: both;
-    display: table;
-  } */
-
   /* gir bildene av produktuer hvitt skjær når man hovrer over*/
 a {
     text-decoration: none;
