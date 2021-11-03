@@ -12,11 +12,10 @@ slide_index = 1
 // }  
 
 function displaySlides(n) {  
-    let i = 0 
     let slides = document.getElementsByClassName("img_slide")  
     if (n > slides.length) { slide_index = 1 }  
     if (n < 1) { slide_index = slides.length }  
-    for (i = 0; i < slides.length; i++) {  
+    for (let i = 0; i < slides.length; i++) {  
         slides[i].style.display = "none"  
     }
 
