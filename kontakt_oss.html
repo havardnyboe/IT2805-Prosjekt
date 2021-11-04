@@ -12,20 +12,26 @@
     <body>
         <nav id="navbar"></nav>
 
-        <main>
-            <p>KONTAKT OSS</p>
-            <form>
-                <label for="navn">Navn:</label><br>
-                <input type="text" id="navn"><br>
-
-                <label for="e-post">E-post:</label><br>
-                <input type="email" id="e-post"><br>
-
-                <label for="bestilling">Skriv din melding: </label><br>
-                <input type="textarea" id="bestilling">
-
+        <div id="kontakt">
+            <h2>Kontakt oss</h2>
+            <form action="mailto:daniel.king@ntebb.no" method="POST" enctype="text/plain">
+    
+                <label for="fornavn">Fornavn:</label>
+                <input name="fornavn" type="text" required><br>
+    
+                <label for="etternavn">Etternavn:</label>
+                <input name="etternavn" type="text" required><br>
+    
+                <label for="epost">Epost:</label>
+                <input name="epost" type="email" required><br>
+    
+                <label for="melding">Melding:</label>
+                <input name="melding" type="text"><br>
+    
+                <input type="submit" value="Send" />
+    
             </form>
-        </main>
+        </div>
 
         <footer></footer>
         <script src="scripts/footer.js"></script>
