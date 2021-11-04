@@ -12,6 +12,8 @@
     width: 20rem;
     height: auto;
     margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0px 1px 3px rgba(71, 71, 71, 0.767);
 }
 /* span.anchor gjør refereringspunktet fra index smoothere */
 span.anchor {
