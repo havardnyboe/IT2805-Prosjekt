@@ -1,4 +1,3 @@
-
 main#main_index {
     max-width: 1010px;
     background-color: white;
@@ -7,19 +6,17 @@ main#main_index {
 }
 
 #top_box {
-    height:100vh;
+    height: 100vh;
     overflow: hidden;
 }
 
-#top_box:hover{
+#top_box:hover {
     cursor: pointer;
 }
 
 #index_bilde_m_logo img {
     width: 100%;
     height: calc(100vh - 3rem);
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
     box-sizing: border-box;
 }
 
@@ -39,7 +36,7 @@ main#main_index {
     transform: translate(-50%, -50%);
 }
 
-div#move_down{
+div#move_down {
     background-color: rgba(204, 188, 188, 0.637);
     position: absolute;
     top: 90%;
@@ -54,11 +51,11 @@ div#move_down:hover {
 }
 
 #move_down i {
-        border: solid rgb(255, 255, 255);
-        border-width: 0 4px 4px 0;
-        display: inline-block;
-        padding: 15px;
-        transform: rotate(45deg);
+    border: solid rgb(255, 255, 255);
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 15px;
+    transform: rotate(45deg);
 }
 
 /* om gården */
@@ -90,56 +87,58 @@ div#move_down:hover {
     margin: 0px 0px 8px 0px;
     bottom: -1px;
     color: #ffffff;
-    background-color: rgba(211, 211, 211, 0.514);  
-    font-size: 20px;  
-    width: 100%;  
+    background-color: rgba(211, 211, 211, 0.514);
+    font-size: 20px;
+    width: 100%;
     position: absolute;
     text-align: center;
-    border-radius: 0px 0px 10px 10px; 
+    border-radius: 0px 0px 10px 10px;
 }
-#arrow_left, #arrow_right {  
-    cursor: pointer;  
-    position: absolute;  
-    top: calc(50% - 1.5em);  
-    width: auto;  
+#arrow_left,
+#arrow_right {
+    cursor: pointer;
+    position: absolute;
+    top: calc(50% - 1.5em);
+    width: auto;
     padding: 10px 10px 10px 20px;
-    color: rgb(245, 245, 245);  
-    font-weight: bold;  
-    font-size: 50px;  
-    transition: 0.4s ease;  
-    border-radius: 0 10px 10px 0;  
-} 
-#arrow_right {  
-    right: 0;  
+    color: rgb(245, 245, 245);
+    font-weight: bold;
+    font-size: 50px;
+    transition: 0.4s ease;
+    border-radius: 0 10px 10px 0;
+}
+#arrow_right {
+    right: 0;
     border-radius: 10px 0 0 10px;
-    padding: 10px 20px 10px 10px; 
-}  
-#arrow_left:hover, #arrow_right:hover {  
-    background-color: rgba(173, 173, 173, 0.507);  
+    padding: 10px 20px 10px 10px;
+}
+#arrow_left:hover,
+#arrow_right:hover {
+    background-color: rgba(173, 173, 173, 0.507);
 }
 
-.img_slide {  
-    -webkit-animation-name: fade;  
-    -webkit-animation-duration: 1s;  
-    animation-name: fade;  
-    animation-duration: 1s;  
+.img_slide {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1s;
+    animation-name: fade;
+    animation-duration: 1s;
 }
-@-webkit-keyframes fade {  
-    from {  
-        opacity: .4  
-    }  
-    to {  
-        opacity: 1  
-    }  
-}  
-@keyframes fade {  
-    from {  
-        opacity: .4  
-    }  
-    to {  
-        opacity: 1  
-    }  
-}  
+@-webkit-keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
 /* box om produkter */
 #index_produkter {
@@ -168,12 +167,12 @@ div#move_down:hover {
     text-transform: uppercase;
     font-size: 22px;
 }
-  /* gir bildene av produktuer hvitt skjær når man hovrer over*/
+/* gir bildene av produktuer hvitt skjær når man hovrer over*/
 a {
     text-decoration: none;
 }
-a:hover{
-    cursor: pointer;  
+a:hover {
+    cursor: pointer;
     opacity: 0.8;
 }
 
@@ -202,7 +201,7 @@ a:hover{
     }
 
     #img_slider_container {
-        text-align:initial;
+        text-align: initial;
     }
 
     .img_slide img {
@@ -213,7 +212,8 @@ a:hover{
         font-size: 16px;
     }
 
-    #arrow_left, #arrow_right {
+    #arrow_left,
+    #arrow_right {
         font-size: 30px;
     }
 
@@ -234,10 +234,18 @@ a:hover{
         text-transform: uppercase;
         font-size: 22px;
     }
+}
 
+@media only screen and (max-width: 768px) {
+    #index_bilde_m_logo img {
+        width: auto;
+        height: calc(100vh - 8rem);
+        box-sizing: border-box;
+    }
 }
 
 /* @media only screen and (max-width: 425px) {
+
     .img_slide img {
         max-width: 100%;
         height: 200px;
@@ -249,5 +257,4 @@ a:hover{
 
     #arrow_left, #arrow_right {
         font-size: 20px;
-    }
 } */
