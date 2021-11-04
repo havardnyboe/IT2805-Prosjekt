@@ -1,34 +1,28 @@
 #produkter {
     display: grid;
-    padding: 2rem;
-    grid-template-columns: 1fr 0.5fr;
-    gap: 2rem;
+    padding: 2rem 0;
+    grid-template-columns: 0.5fr 1fr;
+    gap: 1rem;
     align-items: center;
     max-width: 100%;
     margin: 0 auto;
     font: 500 100%/1.5 system-ui;
-  }
-  #produkter.img {
-    max-width: 100%;
+}
+#produkter > img {
+    width: 20rem;
     height: auto;
-  }
-  /* span.anchor gjør refereringspunktet fra index smoothere */
-  span.anchor{
+    margin: 0 auto;
+}
+/* span.anchor gjør refereringspunktet fra index smoothere */
+span.anchor {
     display: block;
-    height: 130px; 
-    margin-top: -130px; 
+    height: 130px;
+    margin-top: -130px;
     visibility: hidden;
-  }
+}
 
-  @media (max-width: 650px) {
-    #produkter.main {
-      display: block;
-      font-size: 80%;
+@media only screen and (max-width: 1000px) {
+    #produkter {
+        grid-template-columns: 1fr;
     }
-    #produkter.p {
-      position: relative;
-      margin: -3rem 0 2rem 1rem;
-      padding: 1rem;
-      background: rgba(white, 0.8);
-    }
-  }
+}
