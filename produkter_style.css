@@ -1,16 +1,37 @@
-#produkter {
+#main_produkter {
+    /* grid-template-columns: 0.5fr 1fr;
+    gap: 1rem;
+    align-items: center; */
+    font: 500 100%/1.5 system-ui;
+}
+
+#main_produkter h2 {
+    margin-top: 30px;
+}
+
+#main_produkter h2:first-child {
+    margin-top: 10px;
+}
+
+.produkt_container{
     display: grid;
     grid-template-columns: 0.5fr 1fr;
     gap: 1rem;
     align-items: center;
-    font: 500 100%/1.5 system-ui;
 }
-#produkter > img {
+
+.produkt_container img {
     width: 20rem;
     height: auto;
+    margin: auto;
+    /* margin: 0 auto; */
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px rgba(71, 71, 71, 0.767);
+}
+
+.produkt_bilde {
+    display: block;
     margin: 0 auto;
-    border-radius: 10px;
-    box-shadow: 0px 1px 3px rgba(71, 71, 71, 0.767);
 }
 /* span.anchor gjør refereringspunktet fra index smoothere */
 span.anchor {
@@ -20,8 +41,17 @@ span.anchor {
     visibility: hidden;
 }
 
-@media only screen and (max-width: 1000px) {
-    #produkter {
-        grid-template-columns: 1fr;
+@media only screen and (max-width: 768px) {
+    .produkt_container {
+        display: unset;
+    }
+    .produkt_bilde {
+        max-width: 80%;
     }
 }
+
+/* @media only screen and (max-width: 1000px) {
+    #main_produkter {
+        grid-template-columns: 1fr;
+    }
+} */
