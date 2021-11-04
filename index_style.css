@@ -1,9 +1,10 @@
-main#main_index {
+
+/* main#main_index {
     max-width: 1010px;
     background-color: white;
     padding: 30px 50px 30px 50px;
     box-shadow: 0px 0px 10px #cac3abb0;
-}
+} */
 
 #top_box {
     height: 100vh;
@@ -177,12 +178,12 @@ a:hover {
 }
 
 @media only screen and (max-width: 768px) {
-    main#main_index {
+    /* main#main_index {
         width: 100%;
         height: auto;
         margin: 1rem 0rem;
         padding: 0px;
-    }
+    } */
 
     #top_box img {
         height: calc(100vh - 14rem);
