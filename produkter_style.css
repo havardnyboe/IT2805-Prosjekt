@@ -1,11 +1,8 @@
 #produkter {
     display: grid;
-    padding: 2rem 0;
     grid-template-columns: 0.5fr 1fr;
     gap: 1rem;
     align-items: center;
-    max-width: 100%;
-    margin: 0 auto;
     font: 500 100%/1.5 system-ui;
 }
 #produkter > img {
