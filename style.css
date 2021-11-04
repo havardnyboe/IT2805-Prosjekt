@@ -188,6 +188,9 @@ iframe {
         justify-content: space-between;
         align-items: center;
     } */
+
+    /* FOR INDEX*/
+    
 }
 
 @media only screen and (max-width: 425px) {
@@ -217,5 +220,9 @@ iframe {
     #arrow_left,
     #arrow_right {
         font-size: 20px;
+    }
+
+    #logo img {
+        width: 220px;
     }
 }
