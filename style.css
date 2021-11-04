@@ -19,7 +19,7 @@ main {
     /* min-height: calc(100vh - 6rem - 7rem); */
     min-height: calc(100vh - 6rem);
     background-color: white;
-    padding: 30px 50px 30px 50px;
+    padding: 20px 50px 40px 50px;
     box-shadow: 0px 0px 10px #cac3abb0;
 
     display: flex;
@@ -103,6 +103,7 @@ h2 {
     font-size: 26px;
     font-weight: 600;
     margin-top: 1em;
+    margin: 10px 0px 5px 0px;
 }
 
 p {
@@ -197,6 +198,10 @@ iframe {
     footer {
         height: 10rem;
         text-align: center;
+    }
+
+    main {
+        width: 90%;
     }
 
     /* for index utelukkende */
