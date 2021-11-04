@@ -30,8 +30,8 @@
 
 #logo img {
     position: absolute;
-    height: 300px;
-    width: auto;
+    height: 250px;
+    /* width: auto; */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -178,22 +178,32 @@ a:hover {
 }
 
 @media only screen and (max-width: 768px) {
-    /* main#main_index {
-        width: 100%;
-        height: auto;
-        margin: 1rem 0rem;
-        padding: 0px;
-    } */
 
-    #top_box img {
-        height: calc(100vh - 14rem);
+    #top_box {
+        height: 20rem;
+    }
+
+    #index_bilde_m_logo {
+        height: 12rem;
+        width: auto;
+    }
+
+    #index_bilde_m_logo img {
+        display: block;
+        height: 100%;
+        /* width: 80%; */
+        margin: 0px auto;
     }
 
     #logo img {
-        position: absolute;
-        height: 120px;
-        width: 220px;
-        top: 60%;
+
+        height: 140px;
+        top: 14rem;
+    }
+    
+
+    div#move_down {
+        display: none;
     }
 
     #index_om_gaarden {
@@ -203,6 +213,7 @@ a:hover {
 
     #img_slider_container {
         text-align: initial;
+        width: 100%;
     }
 
     .img_slide img {
@@ -219,13 +230,12 @@ a:hover {
     }
 
     #index_produkter {
-        /* margin-top: 20px; */
         text-align: center;
     }
 
     .img_column {
-        width: 80%;
-        /* max-height: 33.3%; */
+        width: 100%;
+        height: auto;
         margin: auto;
         float: none;
     }
@@ -234,15 +244,34 @@ a:hover {
         text-align: center;
         text-transform: uppercase;
         font-size: 22px;
+        margin-top: 0px;
     }
 }
+@media only screen and (max-width: 425px) {
+  
+    /* for index utelukkende */
+    
 
-@media only screen and (max-width: 768px) {
-    #index_bilde_m_logo img {
+
+    #logo img {
+        height: 100px;
         width: auto;
-        height: calc(100vh - 8rem);
-        box-sizing: border-box;
     }
+    
+    .img_slide img {
+        max-width: 100%;
+        height: 200px;
+    }
+
+    .text_slide p {
+        font-size: 12px;
+    }
+
+    #arrow_left,
+    #arrow_right {
+        font-size: 20px;
+    }
+
 }
 
 /* @media only screen and (max-width: 425px) {
