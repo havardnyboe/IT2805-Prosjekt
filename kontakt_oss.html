@@ -7,6 +7,7 @@
         <title>Kontakt oss</title>
         <link rel="stylesheet" href="style.css" />
         <link rel="stylesheet" href="form.css">
+        <link rel="stylesheet" href="kontakt_oss_style.css">
     </head>
 
     <body>
@@ -17,16 +18,16 @@
             <form action="mailto:daniel.king@ntebb.no" method="POST" enctype="text/plain">
     
                 <label for="fornavn">Fornavn:</label>
-                <input name="fornavn" type="text" required><br>
+                <input name="fornavn" type="text" required placeholder="Ola"><br>
     
                 <label for="etternavn">Etternavn:</label>
-                <input name="etternavn" type="text" required><br>
+                <input name="etternavn" type="text" required placeholder="Normann"><br>
     
                 <label for="epost">Epost:</label>
-                <input name="epost" type="email" required><br>
+                <input name="epost" type="email" required placeholder="ola.normann@epost.com"><br>
     
-                <label for="melding">Melding:</label>
-                <input name="melding" type="text"><br>
+                <label  for="melding">Melding:</label>
+                <textarea name="message" cols="30" rows="10"required placeholder="Skriv din melding her..."></textarea>
     
                 <input type="submit" value="Send" />
     
