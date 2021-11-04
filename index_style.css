@@ -1,5 +1,4 @@
 
-
 main#main_index {
     max-width: 1010px;
     background-color: white;
@@ -18,10 +17,18 @@ main#main_index {
 
 #index_bilde_m_logo img {
     width: 100%;
+    height: calc(100vh - 3rem);
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    box-sizing: border-box;
+}
+
+/* #index_bilde_m_logo img {
+    width: 100%;
     height: calc(100vh - 6rem);
     border: 2px solid black;
     box-sizing: border-box;
-}
+} */
 
 #logo img {
     position: absolute;
@@ -40,10 +47,10 @@ div#move_down{
     transform: translate(-50%, -50%);
     padding: 20px 30px 30px 30px;
     border-radius: 50px;
+    transition: 0.5s ease-in;
 }
 div#move_down:hover {
     opacity: 0.8;
-
 }
 
 #move_down i {
@@ -99,7 +106,7 @@ div#move_down:hover {
     color: rgb(245, 245, 245);  
     font-weight: bold;  
     font-size: 50px;  
-    transition: 0.3s ease;  
+    transition: 0.4s ease;  
     border-radius: 0 10px 10px 0;  
 } 
 #arrow_right {  
@@ -175,6 +182,7 @@ a:hover{
         width: 100%;
         height: auto;
         margin: 1rem 0rem;
+        padding: 0px;
     }
 
     #top_box img {
@@ -229,7 +237,7 @@ a:hover{
 
 }
 
-@media only screen and (max-width: 425px) {
+/* @media only screen and (max-width: 425px) {
     .img_slide img {
         max-width: 100%;
         height: 200px;
@@ -242,4 +250,4 @@ a:hover{
     #arrow_left, #arrow_right {
         font-size: 20px;
     }
-}
+} */
