@@ -20,20 +20,26 @@ main {
     justify-content: space-evenly;
 }
 
-nav {
-    background-color: #4d5619;
+nav, footer {
+    background-color: #626d21d2;
     font-weight: bold;
-    font-size: 22px;
-    height: 6rem;
+    font-size: 18px;
+    height: 3rem;
+    line-height: 3rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    box-shadow: 0px 0px 10px #000;
+    box-shadow: 0px 0px 5px #000;
+    text-shadow: 0px 0px 2px black;
     padding: 0 5rem;
+}
+footer {
+    font-size: 16px;
 }
 
 nav ul {
-    width: 50%;
+        width: 30%;
+        min-width: 330px;
 }
 
 nav ul,
@@ -63,7 +69,7 @@ footer * {
     font-size: 36px;
 }
 
-footer {
+/* footer {
     background-color: #4d5619;
     height: 7rem;
     padding: 0 5rem;
@@ -72,7 +78,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     box-shadow: 0px 0px 4px #000;
-}
+} */
 
 footer b {
     font-weight: 600;
@@ -97,7 +103,7 @@ p {
 
 @media only screen and (max-width: 1000px) {
     nav ul {
-        width: 70%;
+        width: 30%;
     }
 }
 
@@ -108,6 +114,10 @@ p {
         text-align: center;
     }
 /* for at teksten skal fylle ut siden på mobil */
+    main{
+        padding: 0px;
+    }
+
     main p {
         text-align: justify;
     }
@@ -120,11 +130,17 @@ p {
         display: inline-block;
     }
 
-    nav {
-        height: 14rem;
+    nav, footer {
+        height: 8rem;
+        font-size: 16px;
         flex-direction: column;
         align-items: center;
-        justify-content: space-evenly;
+        line-height: initial;
+        /* justify-content: space-evenly; */
+    }
+
+    footer {
+        height: 5rem;
     }
 
     nav ul {
@@ -132,14 +148,29 @@ p {
         height: 100%;
         flex-direction: column;
         justify-content: space-evenly;
-        align-items: center;
+        /* align-items: center; */
     }
 
-    footer {
+    /* footer {
         height: min-content;
         padding: 2rem 0;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+    } */
+}
+
+@media only screen and (max-width: 425px) {
+    .img_slide img {
+        max-width: 100%;
+        height: 200px;
+    }
+
+    .text_slide p {
+        font-size: 12px;
+    }
+
+    #arrow_left, #arrow_right {
+        font-size: 20px;
     }
 }
