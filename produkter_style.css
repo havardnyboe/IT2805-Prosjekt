@@ -14,10 +14,17 @@
     background-color:  #626d2150;
     border-radius: 4px 4px 10px 10px;
     width: 100%;
-    
+    transition: margin 0.2s ease-in-out;
 
 }
+.produkt_container:hover{
 
+    background-color: #626d21aa;
+    margin-top: 10px;
+    gap: 1.3rem;
+    margin-bottom: 4rem;
+    border-radius: 10px 10px 15px 1px;
+}
 .produkt_container img {
     width: 20rem;
     height: auto;
