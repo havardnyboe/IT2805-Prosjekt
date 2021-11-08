@@ -122,6 +122,10 @@ div#move_down:hover {
     transform: rotate(45deg);
 }
 
+#index_om_gaarden {
+    width: 100%;
+}
+
 #index_om_gaarden p {
     font-size: 20px;
 }
