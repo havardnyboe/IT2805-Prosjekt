@@ -126,6 +126,10 @@ div#move_down:hover {
     font-size: 20px;
 }
 
+#index_om_gaarden h2:hover {
+    opacity: 0.6;
+}
+
 /* img slider */
 #img_slider_container {
     margin: auto;
