@@ -15,4 +15,4 @@ var html = `
 </li>
 </ul>`;
 
-document.getElementById("navbar").innerHTML = html;
+document.getElementById("navbar").innerHTML = html; // Setter inn html i navbar
