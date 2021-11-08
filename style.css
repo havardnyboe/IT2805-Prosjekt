@@ -484,7 +484,18 @@ textarea:hover {
 
     #arrow_left,
     #arrow_right {
-        font-size: 30px;
+    top: 15%;
+    height: 70%;
+    width: 40%;
+    font-size: 0px;
+    padding: initial;
+    transition: none;
+    border-radius: initial;
+    color: initial;
+    }
+    #arrow_left:hover,
+    #arrow_right:hover {
+        background-color: initial;
     }
 
     #index_produkter {
