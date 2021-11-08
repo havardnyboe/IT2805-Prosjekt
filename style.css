@@ -78,6 +78,150 @@ footer * {
     font-size: 36px;
 }
 
+#logo img {
+    position: absolute;
+    height: 250px;
+    /* width: auto; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#top_box {
+    height: 100vh;
+    overflow: hidden;
+}
+
+#top_box:hover {
+    cursor: pointer;
+}
+
+#index_bilde_m_logo img {
+    width: 100%;
+    height: calc(100vh - 3rem);
+    box-sizing: border-box;
+}
+
+div#move_down {
+    background-color: rgba(204, 188, 188, 0.637);
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 30px 30px 30px;
+    border-radius: 50px;
+    transition: 0.5s ease-in;
+}
+div#move_down:hover {
+    opacity: 0.8;
+}
+
+#move_down i {
+    border: solid rgb(255, 255, 255);
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 15px;
+    transform: rotate(45deg);
+}
+
+/* om gården */
+
+#index_om_gaarden p {
+    font-size: 20px;
+}
+
+/* img slider */
+#img_slider_container {
+    margin: auto;
+    position: relative;
+    width: 80%;
+}
+
+.img_slide {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1s;
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+.img_slide img {
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px rgba(71, 71, 71, 0.767);
+}
+
+.text_slide p {
+    padding: 10px 0px 10px 0px;
+    margin: 0px 0px 8px 0px;
+    bottom: -1px;
+    color: #ffffff;
+    background-color: rgba(211, 211, 211, 0.514);
+    font-size: 20px;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    border-radius: 0px 0px 10px 10px;
+}
+#arrow_left,
+#arrow_right {
+    cursor: pointer;
+    position: absolute;
+    top: calc(50% - 1.5em);
+    width: auto;
+    padding: 10px 10px 10px 20px;
+    color: rgb(245, 245, 245);
+    font-weight: bold;
+    font-size: 50px;
+    transition: 0.4s ease;
+    border-radius: 0 10px 10px 0;
+}
+#arrow_right {
+    right: 0;
+    border-radius: 10px 0 0 10px;
+    padding: 10px 20px 10px 10px;
+}
+#arrow_left:hover,
+#arrow_right:hover {
+    background-color: rgba(173, 173, 173, 0.507);
+}
+
+/* box om produkter */
+#index_produkter {
+    margin-top: 20px;
+}
+
+/* ordner så bilderaden står riktig */
+.img_column {
+    float: left;
+    width: 33.33%;
+    height: 330px;
+    padding: 5px;
+    display: block;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0px;
+}
+.img_column img {
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+    box-shadow: 0px 1px 3px rgba(71, 71, 71, 0.767);
+}
+.img_column p {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+/* gir bildene av produktuer hvitt skjær når man hovrer over*/
+a {
+    text-decoration: none;
+}
+a:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
 /* footer {
     background-color: #4d5619;
     height: 7rem;
@@ -119,6 +263,23 @@ iframe {
     border-style: solid;
     border-color: black;
     margin: 20px auto 20px auto;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -190,7 +351,6 @@ iframe {
     } */
 
     /* FOR INDEX*/
-    
 }
 
 @media only screen and (max-width: 425px) {
@@ -294,4 +454,93 @@ textarea:hover {
         box-shadow: none;
     }
 }
+@media only screen and (max-width: 768px) {
+    #top_box {
+        height: 20rem;
+    }
 
+    #index_bilde_m_logo {
+        height: 12rem;
+        width: auto;
+    }
+
+    #index_bilde_m_logo img {
+        display: block;
+        height: 100%;
+        /* width: 80%; */
+        margin: 0px auto;
+    }
+
+    #logo img {
+        height: 140px;
+        top: 14rem;
+    }
+
+    div#move_down {
+        display: none;
+    }
+
+    #index_om_gaarden {
+        margin: 10px 10px 0px 10px;
+        text-align: center;
+    }
+
+    #img_slider_container {
+        text-align: initial;
+        width: 100%;
+    }
+
+    .img_slide img {
+        max-width: 100%;
+        height: 300px;
+    }
+    .text_slide p {
+        font-size: 16px;
+    }
+
+    #arrow_left,
+    #arrow_right {
+        font-size: 30px;
+    }
+
+    #index_produkter {
+        text-align: center;
+    }
+
+    .img_column {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        float: none;
+    }
+
+    .img_column p {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 22px;
+        margin-top: 0px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    /* for index utelukkende */
+
+    #logo img {
+        height: 100px;
+        width: auto;
+    }
+
+    .img_slide img {
+        max-width: 100%;
+        height: 200px;
+    }
+
+    .text_slide p {
+        font-size: 12px;
+    }
+
+    #arrow_left,
+    #arrow_right {
+        font-size: 20px;
+    }
+}
