@@ -14,17 +14,15 @@ body {
 main {
     margin: 0 auto;
     width: 80%;
-
     max-width: 1010px;
-    /* min-height: calc(100vh - 6rem - 7rem); */
-    min-height: calc(100vh - 6rem);
+    min-height: calc(100vh - 9.7rem);
     background-color: white;
     padding: 20px 50px 40px 50px;
     box-shadow: 0px 0px 10px #cac3abb0;
-
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 nav,
@@ -41,9 +39,6 @@ footer {
     text-shadow: 0px 0px 2px black;
     padding: 0 5rem;
     position: relative;
-}
-footer {
-    font-size: 16px;
 }
 
 nav ul {
@@ -75,9 +70,6 @@ footer * {
 }
 
 #main_produkter {
-    /* grid-template-columns: 0.5fr 1fr;
-    gap: 1rem;
-    align-items: center; */
     font: 500 100%/1.5 system-ui;
 }
 
@@ -88,7 +80,6 @@ footer * {
 #logo img {
     position: absolute;
     height: 250px;
-    /* width: auto; */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -130,8 +121,6 @@ div#move_down:hover {
     padding: 15px;
     transform: rotate(45deg);
 }
-
-/* om gården */
 
 #index_om_gaarden p {
     font-size: 20px;
@@ -217,6 +206,7 @@ span.anchor {
     width: 100%;
     transition: margin 0.2s ease-in-out;
 }
+
 .produkt_container:hover {
     background-color: #626d21aa;
     margin-top: 10px;
@@ -224,11 +214,11 @@ span.anchor {
     margin-bottom: 4rem;
     border-radius: 10px 10px 15px 10px;
 }
+
 .produkt_container img {
     width: 20rem;
     height: auto;
     margin: auto;
-    /* margin: 0 auto; */
     border-radius: 0px 0px 10px 10px;
     box-shadow: 0px 0px 3px rgba(71, 71, 71, 0.767);
 }
@@ -277,17 +267,6 @@ a:hover {
     cursor: pointer;
     opacity: 0.8;
 }
-
-/* footer {
-    background-color: #4d5619;
-    height: 7rem;
-    padding: 0 5rem;
-    font-size: 18px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0px 0px 4px #000;
-} */
 
 footer b {
     font-weight: 600;
@@ -338,13 +317,65 @@ iframe {
     }
 }
 
-@media only screen and (max-width: 768px) {
-    iframe {
-        width: 100%;
-        height: 20rem;
-    }
-}
 /* for kart */
+
+#h2_kontakt {
+    text-align: center;
+}
+
+#kontakt {
+    width: 70%;
+    padding: 12px 24px 24px 24px;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background: #ffffff;
+    border-radius: 7px;
+    box-sizing: border-box;
+}
+
+label {
+    font-size: 0.85em;
+    margin-left: 12px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background: #626d21d2;
+    margin: 0 auto;
+    outline: 0;
+    color: white;
+    border: 0;
+    padding: 12px 24px;
+    border-radius: 4px;
+    transition: all ease-in-out 0.1s;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+input[type="submit"]:hover {
+    background: #434b17d2;
+}
+
+input:hover,
+textarea:hover {
+    background-color: rgba(202, 202, 202, 0.384);
+}
 
 @media only screen and (max-width: 1000px) {
     nav ul {
@@ -395,122 +426,20 @@ iframe {
         height: 100%;
         flex-direction: column;
         justify-content: space-evenly;
-        /* align-items: center; */
     }
 
-    /* footer {
-        height: min-content;
-        padding: 2rem 0;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    } */
-
-    /* FOR INDEX*/
-}
-
-@media only screen and (max-width: 425px) {
-    nav ul {
-        min-width: 200px;
+    iframe {
+        width: 100%;
+        height: 20rem;
     }
 
-    footer {
-        height: 10rem;
-        text-align: center;
-    }
-
-    main {
-        width: 90%;
-    }
-
-    /* for index utelukkende */
-    .img_slide img {
-        max-width: 100%;
-        height: 200px;
-    }
-
-    .text_slide p {
-        font-size: 12px;
-    }
-
-    #arrow_left,
-    #arrow_right {
-        font-size: 20px;
-    }
-
-    #logo img {
-        width: 220px;
-    }
-}
-
-#h2_kontakt {
-    text-align: center;
-}
-
-#kontakt {
-    width: 50%;
-    padding: 12px 24px 24px 24px;
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    background: #ffffff;
-    border-radius: 7px;
-    box-shadow: 0px 0px 10px #cac3abb0;
-    box-sizing: border-box;
-}
-
-label {
-    font-size: 0.85em;
-    margin-left: 12px;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-}
-
-input[type="submit"] {
-    width: 100%;
-    background: #626d21d2;
-    margin: 0 auto;
-    outline: 0;
-    color: white;
-    border: 0;
-    padding: 12px 24px;
-    border-radius: 4px;
-    transition: all ease-in-out 0.1s;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-
-input[type="submit"]:hover {
-    background: #434b17d2;
-}
-
-input:hover,
-textarea:hover {
-    background-color: rgba(202, 202, 202, 0.384);
-}
-
-@media only screen and (max-width: 768px) {
     #kontakt {
         width: 100%;
         margin-left: 0;
         margin-right: 0;
         box-shadow: none;
     }
-}
-@media only screen and (max-width: 768px) {
+
     #top_box {
         height: 20rem;
     }
@@ -523,7 +452,6 @@ textarea:hover {
     #index_bilde_m_logo img {
         display: block;
         height: 100%;
-        /* width: 80%; */
         margin: 0px auto;
     }
 
@@ -576,10 +504,43 @@ textarea:hover {
         font-size: 22px;
         margin-top: 0px;
     }
+
+    .produkt_container {
+        display: unset;
+    }
+    .produkt_bilde {
+        max-width: 100%;
+    }
 }
 
 @media only screen and (max-width: 425px) {
+    nav ul {
+        min-width: 200px;
+    }
+
+    footer {
+        height: 10rem;
+        text-align: center;
+    }
+
+    main {
+        width: 90%;
+    }
+
     /* for index utelukkende */
+    .img_slide img {
+        max-width: 100%;
+        height: 200px;
+    }
+
+    .text_slide p {
+        font-size: 12px;
+    }
+
+    #arrow_left,
+    #arrow_right {
+        font-size: 20px;
+    }
 
     #logo img {
         height: 100px;
@@ -598,14 +559,5 @@ textarea:hover {
     #arrow_left,
     #arrow_right {
         font-size: 20px;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .produkt_container {
-        display: unset;
-    }
-    .produkt_bilde {
-        max-width: 100%;
     }
 }
