@@ -4,5 +4,5 @@ let footerHTML = `
     <div id="adresse"><b>Adresse: </b>Bettumveien 84, 3178 Våle</div>
 `;
 
-let footer = document.querySelector("footer");
-footer.innerHTML = footerHTML;
+let footer = document.querySelector("footer"); // henter footer elementet
+footer.innerHTML = footerHTML; // legger inn HTML i footer elementet
