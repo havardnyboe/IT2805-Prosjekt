@@ -14,15 +14,18 @@
     <div id="top_box">
         <nav id="navbar"></nav>
         <script src="scripts/navbar.js"></script>
-        <div id="index_bilde_m_logo" onclick="moveDownPage()">
-            <img src="img/bettum.jpg" alt="Bakgrunnsbilde med bier">
-        </div>
-        <div id="logo" onclick="moveDownPage()">
-            <img src="img/bettum_logo7.png" alt="Logo for Bettum gård">
-        </div>
-        <div id="move_down" onclick="moveDownPage()">
-            <i></i>
-        </div>
+
+        <a id="move_down_page_unit">
+            <div id="index_bilde_m_logo">
+                <img src="img/bie_bettum.jpg" alt="Bakgrunnsbilde med bier">
+            </div>
+            <div id="logo">
+                <img src="img/bettum_logo7.png" alt="Logo for Bettum gård">
+            </div>
+            <div id="move_down">
+                <i></i>
+            </div>
+        </a>
 
     </div>
 
@@ -68,6 +71,13 @@
                 </div>
             </div>
 
+            <div class="img_slide">
+                <img src="img/bie_bettum3.jpg" alt="Bier">
+                <div class="text_slide">
+                    <p> Lorem ipsum dolor sit amet 5</p>
+                </div>
+            </div>
+
             <!-- nav piler -->
             <a id="arrow_left" onclick="nextSlide(-1);delayTimer()">❮</a>
             <a id="arrow_right" onclick="nextSlide(1);delayTimer()">❯</a>
@@ -80,7 +90,7 @@
             <div class="img_column">
                 <a href="produkter.html#anchor_produkter_honning">
                     <p>Honning</p>
-                    <img src="img/bettum.jpg" alt="Bier">
+                    <img src="img/bie_bettum3.jpg" alt="Bier">
                 </a>
             </div>
 

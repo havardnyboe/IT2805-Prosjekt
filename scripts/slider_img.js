@@ -5,11 +5,7 @@
     // ligger inne noe kommentert-ut kode fordi jeg sliter med at timer løper løpsk av og til.. 
             // prøver å finne det ut, men tror den fungerer som den skal nå
     //edit som jeg tror beholdes, setter til 1 fordi timeSlide funksjonen er gjort om
-slide_index = 1
-
-// function currentSlide(i) {  
-//     displaySlides(slide_index = i);  
-// }  
+let slide_index = 1
 
 function displaySlides(n) {  
     let slides = document.getElementsByClassName("img_slide")  
@@ -18,12 +14,8 @@ function displaySlides(n) {
     for (let i = 0; i < slides.length; i++) {  
         slides[i].style.display = "none"  
     }
-
     slides[slide_index - 1].style.display = "block";  
 }
-
-            // insp fra:
-            // https://www.c-sharpcorner.com/article/creating-an-image-slider-using-javascript-html-and-css-only/
 
 displaySlides(slide_index)
 
