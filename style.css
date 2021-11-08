@@ -507,6 +507,14 @@ textarea:hover {
     .produkt_bilde {
         max-width: 100%;
     }
+
+    span.anchor {
+        height: 250px;
+        margin-top: -250px;
+    }
+    span#anchor_produkter_honning {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 425px) {
