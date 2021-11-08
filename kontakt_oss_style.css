@@ -1,8 +1,7 @@
-h2 {
+#h2_kontakt {
     text-align: center;
 }
 
-/* Add styles to 'container' class */
 #kontakt {
     width: 50%;
     padding: 12px 24px 24px 24px;
@@ -16,13 +15,11 @@ h2 {
     box-sizing: border-box;
 }
 
-/* Add styles to 'label' selector */
 label {
     font-size: 0.85em;
     margin-left: 12px;
 }
 
-/* Add styles to 'input' and 'textarea' selectors */
 input[type="text"],
 input[type="email"],
 textarea {
@@ -36,7 +33,6 @@ textarea {
     resize: vertical;
 }
 
-/* Add styles to the submit button */
 input[type="submit"] {
     width: 100%;
     background: #626d21d2;
@@ -52,7 +48,6 @@ input[type="submit"] {
     text-align: center;
 }
 
-/* Style 'hover' property */
 input[type="submit"]:hover {
     background: #434b17d2;
 }
