@@ -560,11 +560,6 @@ textarea:hover {
         font-size: 12px;
     }
 
-    #arrow_left,
-    #arrow_right {
-        font-size: 20px;
-    }
-
     /* for index utelukkende */
 
     #logo img {
@@ -579,10 +574,5 @@ textarea:hover {
 
     .text_slide p {
         font-size: 12px;
-    }
-
-    #arrow_left,
-    #arrow_right {
-        font-size: 20px;
     }
 }
