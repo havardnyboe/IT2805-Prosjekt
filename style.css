@@ -551,16 +551,6 @@ textarea:hover {
     }
 
     /* for index utelukkende */
-    .img_slide img {
-        max-width: 100%;
-        height: 200px;
-    }
-
-    .text_slide p {
-        font-size: 12px;
-    }
-
-    /* for index utelukkende */
 
     #logo img {
         height: 100px;
