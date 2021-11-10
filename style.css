@@ -100,6 +100,10 @@ footer * {
     box-sizing: border-box;
 }
 
+#forside_tablet, #forside_mobil {
+    display: none;
+}
+
 div#move_down {
     background-color: rgba(204, 188, 188, 0.637);
     position: absolute;
@@ -447,8 +451,17 @@ textarea:hover {
         width: auto;
     }
 
-    #index_bilde_m_logo img {
+    #forside_pc {
+        display: none;
+    }
+
+    #forside_tablet {
         display: block;
+        height: 100%;
+        margin: 0px auto;
+    }
+
+    #index_bilde_m_logo img {
         height: 100%;
         margin: 0px auto;
     }
@@ -548,6 +561,14 @@ textarea:hover {
 
     main {
         width: 90%;
+    }
+
+    #forside_mobil {
+        display: block;
+    }
+
+    #forside_tablet {
+        display: none;
     }
 
     #logo img {
