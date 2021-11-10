@@ -504,6 +504,7 @@ textarea:hover {
 
     #index_produkter {
         text-align: center;
+        
     }
 
     .img_column {
@@ -511,6 +512,7 @@ textarea:hover {
         height: auto;
         margin: auto;
         float: none;
+        
     }
 
     .img_column p {
@@ -594,6 +596,12 @@ margin-bottom: 20px;
     font-weight: 400;
     margin: 30px;
 }
+#index_om_gaarden{
+    text-align: center;
+    margin: 20px;
+    
+}
 
-
-
+#index_om_gaarden p a {
+color: blue;
+}
