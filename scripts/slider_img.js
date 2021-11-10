@@ -16,7 +16,7 @@ let bildeListe = [
 ]; // liste med bilder
 let bildenr = 0;
 let slideShow = nesteBilde;
-let millisekunder = 3000; // millisekunder mellom bilder
+let millisekunder = 5000; // millisekunder mellom bilder
 let intervall = setInterval(slideShow, millisekunder); // setter inn bilder automatisk
 
 // funksjon for å sette inn neste bilde
