@@ -1,6 +1,6 @@
 window.onload = () => {
-    document.getElementById("arrow_left").onclick = forrigeBilde;
-    document.getElementById("arrow_right").onclick = nesteBilde;
+    document.querySelector("#arrow_left").addEventListener("click", () => { forrigeBilde(15000) }); // setter inn forrige bilde ved klikk på pil venstre og setter delay til 20 sekunder
+    document.querySelector("#arrow_right").addEventListener("click", () => { nesteBilde(15000) }); // setter inn neste bilde ved klikk på pil høyre og setter delay til 20 sekunder
     document.onkeydown = keySlide; // setter inn bilder ved hjelp av piltast
 };
 
@@ -16,11 +16,10 @@ let bildeListe = [
 ]; // liste med bilder
 let bildenr = 0;
 let slideShow = nesteBilde;
-let millisekunder = 5000; // millisekunder mellom bilder
-let intervall = setInterval(slideShow, millisekunder); // setter inn bilder automatisk
+let intervall = setInterval(slideShow, 5000); // setter inn bilder automatisk
 
 // funksjon for å sette inn neste bilde
-function nesteBilde() {
+function nesteBilde(delay = 5000) {
     if (bildenr >= bildeListe.length - 1) {
         bildenr = 0;
     } else {
@@ -29,11 +28,11 @@ function nesteBilde() {
     clearInterval(intervall); // stopper automatisk innsetting av bilder
     console.log(bildenr);
     bildeDiv.innerHTML = `<img class="img_slide" src="${bildeListe[bildenr]}" alt="${bildeListe[bildenr]}">`; // setter inn bilde manuelt
-    intervall = setInterval(slideShow, millisekunder); // setter inn bilder automatisk
+    intervall = setInterval(slideShow, delay); // setter inn bilder automatisk
 }
 
 // funksjon for å sette inn forrige bilde
-function forrigeBilde() {
+function forrigeBilde(delay = 5000) {
     if (bildenr <= 0) {
         bildenr = bildeListe.length - 1;
     } else {
@@ -42,14 +41,14 @@ function forrigeBilde() {
     clearInterval(intervall); // stopper automatisk innsetting av bilder
     console.log(bildenr);
     bildeDiv.innerHTML = `<img class="img_slide" src="${bildeListe[bildenr]}" alt="${bildeListe[bildenr]}">`; // setter inn bilde manuelt
-    intervall = setInterval(slideShow, millisekunder); // setter inn bilder automatisk
+    intervall = setInterval(slideShow, delay); // setter inn bilder automatisk
 }
 
 // funksjon for å sette inn bilder ved hjelp av piltast
 function keySlide(keypress) {
     if (keypress.keyCode == "37") { // venstre pil
-        forrigeBilde();
+        forrigeBilde(15000);
     } else if (keypress.keyCode == "39") { // høyre pil
-        nesteBilde();
+        nesteBilde(15000);
     }
 }
