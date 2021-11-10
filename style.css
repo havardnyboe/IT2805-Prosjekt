@@ -138,7 +138,7 @@ div#move_down:hover {
 #img_slider_container {
     margin: auto;
     position: relative;
-    width: 80%;
+    width: 100%;
 }
 
 .img_slide {
@@ -146,9 +146,6 @@ div#move_down:hover {
     -webkit-animation-duration: 1s;
     animation-name: fade;
     animation-duration: 1s;
-}
-
-.img_slide img {
     width: 100%;
     height: 500px;
     border-radius: 10px;
@@ -488,14 +485,14 @@ textarea:hover {
 
     #arrow_left,
     #arrow_right {
-    top: 15%;
-    height: 70%;
-    width: 40%;
-    font-size: 0px;
-    padding: initial;
-    transition: none;
-    border-radius: initial;
-    color: initial;
+        top: 15%;
+        height: 70%;
+        width: 40%;
+        font-size: 0px;
+        padding: initial;
+        transition: none;
+        border-radius: initial;
+        color: initial;
     }
     #arrow_left:hover,
     #arrow_right:hover {
