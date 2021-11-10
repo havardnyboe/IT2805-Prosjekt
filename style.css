@@ -587,3 +587,11 @@ textarea:hover {
     font-weight: 400;
     margin: 30px;
 }
+#index_om_gaarden {
+    text-align: center;
+    margin: 20px;
+}
+
+#index_om_gaarden p a {
+    color: blue;
+}
