@@ -100,7 +100,8 @@ footer * {
     box-sizing: border-box;
 }
 
-#forside_tablet, #forside_mobil {
+#forside_tablet,
+#forside_mobil {
     display: none;
 }
 
@@ -368,7 +369,7 @@ textarea:hover {
 
 @-webkit-keyframes fade {
     from {
-        opacity: 0.4;
+        opacity: 0.5;
     }
     to {
         opacity: 1;
@@ -376,16 +377,10 @@ textarea:hover {
 }
 @keyframes fade {
     from {
-        opacity: 0.4;
+        opacity: 0.5;
     }
     to {
         opacity: 1;
-    }
-}
-
-@media only screen and (max-width: 1000px) {
-    nav ul {
-        width: 30%;
     }
 }
 
@@ -403,7 +398,6 @@ textarea:hover {
 
     main p {
         text-align: left;
-
     }
 
     .logo_main {
