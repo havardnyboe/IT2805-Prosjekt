@@ -273,6 +273,11 @@ a:hover {
     opacity: 0.8;
 }
 
+/* fjerner hover effekt fra forside bilde */
+#move_down_page_unit:hover {
+    opacity: 1;
+}
+
 footer b {
     font-weight: 600;
 }
