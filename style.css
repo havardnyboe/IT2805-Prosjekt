@@ -407,6 +407,7 @@ textarea:hover {
 
     main p {
         text-align: left;
+
     }
 
     .logo_main {
@@ -479,7 +480,7 @@ textarea:hover {
         width: 100%;
     }
 
-    .img_slide img {
+    .img_slide {
         max-width: 100%;
         height: 300px;
     }
@@ -570,7 +571,7 @@ textarea:hover {
         width: auto;
     }
 
-    .img_slide img {
+    .img_slide {
         max-width: 100%;
         height: 200px;
     }
