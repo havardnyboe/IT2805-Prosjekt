@@ -1,68 +1,53 @@
-let slide_index = 1;
+window.onload = () => {
+    document.getElementById("arrow_left").onclick = forrigeBilde;
+    document.getElementById("arrow_right").onclick = nesteBilde;
+    document.onkeydown = keySlide; // setter inn bilder ved hjelp av piltast
+};
 
-function displaySlides(n) {
-    let slides = document.getElementsByClassName("img_slide"); // henter ut alle slides
-    if (n > slides.length) {
-        slide_index = 1;
-    } // hvis slide_index er større enn antall slides, så sett til 1
-    if (n < 1) {
-        slide_index = slides.length;
-    } // hvis slide_index er mindre enn 1, så sett til antall slides
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+let bildeDiv = document.getElementById("img_slider");
+let bildeListe = [
+    "img/baer.jpg",
+    "img/bettum.jpg",
+    "img/ved.jpg",
+    "img/honning.jpg",
+    "img/bie_bettum3.jpg",
+]; // liste med bilder
+let bildenr = 0;
+let slideShow = nesteBilde;
+let millisekunder = 3000; // millisekunder mellom bilder
+let intervall = setInterval(slideShow, millisekunder); // setter inn bilder automatisk
+
+// funksjon for å sette inn neste bilde
+function nesteBilde() {
+    if (bildenr >= bildeListe.length - 1) {
+        bildenr = 0;
+    } else {
+        bildenr++;
     }
-    slides[slide_index - 1].style.display = "block";
+    clearInterval(intervall); // stopper automatisk innsetting av bilder
+    console.log(bildenr);
+    bildeDiv.innerHTML = `<img class="img_slide" src="${bildeListe[bildenr]}" alt="${bildeListe[bildenr]}">`; // setter inn bilde manuelt
+    intervall = setInterval(slideShow, millisekunder); // setter inn bilder automatisk
 }
 
-displaySlides(slide_index);
-
-// endrer slideindex
-function nextSlide(i) {
-    displaySlides((slide_index += i));
+// funksjon for å sette inn forrige bilde
+function forrigeBilde() {
+    if (bildenr <= 0) {
+        bildenr = bildeListe.length - 1;
+    } else {
+        bildenr--;
+    }
+    clearInterval(intervall); // stopper automatisk innsetting av bilder
+    console.log(bildenr);
+    bildeDiv.innerHTML = `<img class="img_slide" src="${bildeListe[bildenr]}" alt="${bildeListe[bildenr]}">`; // setter inn bilde manuelt
+    intervall = setInterval(slideShow, millisekunder); // setter inn bilder automatisk
 }
 
-// endrer bilder med piltaster
-document.onkeydown = keySlide;
-
+// funksjon for å sette inn bilder ved hjelp av piltast
 function keySlide(keypress) {
-    if (keypress.keyCode == "37") {
-        nextSlide(-1);
-        delayTimer();
-    } else if (keypress.keyCode == "39") {
-        nextSlide(1);
-        delayTimer();
+    if (keypress.keyCode == "37") { // venstre pil
+        forrigeBilde();
+    } else if (keypress.keyCode == "39") { // høyre pil
+        nesteBilde();
     }
 }
-
-// Lagt til en timer som endrer bilde-slides
-let timeHandle = null;
-console.log("tutut timer om 5s");
-
-function timeSlide() {
-    timeHandle = setTimeout(function () {
-        clearTimeout(timeHandle);
-        nextSlide(1);
-        console.log("biip.. timer changing slide every 5s");
-        timeSlide();
-    }, 5000);
-}
-
-timeSlide();
-
-// delayTimer forsinket timeren, og kjører den igang igjen etter 30 sek
-function delayTimer() {
-    clearTimeout(timeHandle);
-    console.log("Manuell endring. Timer forsinket m/ 30s");
-    setTimeout(timeSlide, 30000);
-}
-// gjør at bilde-slider stopper når man forlater siden og begynner igjen når man åpner siden
-document.addEventListener("visibilitychange", function () {
-    if (document.visibilityState == "hidden") {
-        clearTimeout(timeHandle);
-        console.log("Page hidden. Clear timeout for timeHandle");
-    }
-    if (document.visibilityState == "visible") {
-        timeHandle = setTimeout(timeSlide, 5000);
-        console.log("Page visible. Begin timeout 5s");
-    }
-});
