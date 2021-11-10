@@ -138,7 +138,7 @@ div#move_down:hover {
 #img_slider_container {
     margin: auto;
     position: relative;
-    width: 100%;
+    width: 80%;
 }
 
 .img_slide {
@@ -501,7 +501,6 @@ textarea:hover {
 
     #index_produkter {
         text-align: center;
-        
     }
 
     .img_column {
@@ -509,7 +508,6 @@ textarea:hover {
         height: auto;
         margin: auto;
         float: none;
-        
     }
 
     .img_column p {
@@ -582,19 +580,15 @@ textarea:hover {
     }
 }
 
-
-
-
 #tekstOgBilder {
     margin: 20px;
     text-align: center;
 }
 #tekstOgBilder h2 {
-margin-bottom: 20px;
-
+    margin-bottom: 20px;
 }
 #tekstOgBilder img {
-    float: right; 
+    float: right;
     max-width: 600px;
     margin: 30px;
 }
@@ -605,12 +599,11 @@ margin-bottom: 20px;
     font-weight: 400;
     margin: 30px;
 }
-#index_om_gaarden{
+#index_om_gaarden {
     text-align: center;
     margin: 20px;
-    
 }
 
 #index_om_gaarden p a {
-color: blue;
+    color: blue;
 }

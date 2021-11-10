@@ -6,15 +6,17 @@ window.onload = () => {
 
 let bildeDiv = document.getElementById("img_slider");
 let bildeListe = [
-    "img/baer.jpg",
-    "img/bettum.jpg",
-    "img/ved.jpg",
-    "img/honning.jpg",
-    "img/bie_bettum3.jpg",
+    "img/gård_sommer.jpg",
+    "img/gård_vinter.jpg",
+    "img/gård_vinter_2.jpg",
+    "img/gård_vinter_3.jpg",
+    "img/honningpåbord.jpg",
+    "img/oppstilthonning.jpg",
+    "img/rennendehonning.jpg",
 ]; // liste med bilder
 let bildenr = 0;
 let slideShow = nesteBilde;
-let millisekunder = 3000; // millisekunder mellom bilder
+let millisekunder = 5000; // millisekunder mellom bilder
 let intervall = setInterval(slideShow, millisekunder); // setter inn bilder automatisk
 
 // funksjon for å sette inn neste bilde
