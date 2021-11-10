@@ -24,10 +24,6 @@ div {
 }
 
 .image {
-    width: 50%;
-    height: 3px;
-}
-
-#enhet {
-    width: 100px;
+    width: 80%;
+    height: 200px;
 }
