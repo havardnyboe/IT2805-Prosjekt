@@ -130,10 +130,6 @@ div#move_down:hover {
     font-size: 20px;
 }
 
-#index_om_gaarden h2:hover {
-    opacity: 0.6;
-}
-
 /* img slider */
 #img_slider_container {
     margin: auto;
@@ -190,6 +186,15 @@ div#move_down:hover {
 /* box om produkter */
 #index_produkter {
     margin-top: 20px;
+}
+
+#index_om_gaarden {
+    text-align: center;
+    margin: 20px;
+}
+
+#index_om_gaarden p a {
+    color: #626d21d2;
 }
 
 /* span.anchor gjør refereringspunktet fra index smoothere */
@@ -289,6 +294,7 @@ h1 {
 }
 
 h2 {
+    text-align: center;
     font-size: 26px;
     font-weight: 600;
     margin-top: 1em;
@@ -308,10 +314,6 @@ iframe {
     border-style: solid;
     border-color: black;
     margin: 20px auto 20px auto;
-}
-
-#h2_kontakt {
-    text-align: center;
 }
 
 #kontakt {
@@ -385,8 +387,6 @@ textarea:hover {
     }
 }
 
-/* for kart */
-
 @media only screen and (max-width: 1000px) {
     nav ul {
         width: 30%;
@@ -406,7 +406,7 @@ textarea:hover {
     /* for at teksten skal fylle ut siden på mobil */
 
     main p {
-        text-align: justify;
+        text-align: left;
     }
 
     .logo_main {
@@ -457,7 +457,6 @@ textarea:hover {
     #index_bilde_m_logo img {
         display: block;
         height: 100%;
-        /* width: 80%; */
         margin: 0px auto;
     }
 
@@ -566,8 +565,6 @@ textarea:hover {
         width: 90%;
     }
 
-    /* for index utelukkende */
-
     #logo img {
         height: 100px;
         width: auto;
@@ -581,32 +578,4 @@ textarea:hover {
     .text_slide p {
         font-size: 12px;
     }
-}
-
-#tekstOgBilder {
-    margin: 20px;
-    text-align: center;
-}
-#tekstOgBilder h2 {
-    margin-bottom: 20px;
-}
-#tekstOgBilder img {
-    float: right;
-    max-width: 600px;
-    margin: 30px;
-}
-#tekstOgBilder p {
-    text-align: justify;
-    font-size: 16px;
-    font-family: "Heebo", sans-serif;
-    font-weight: 400;
-    margin: 30px;
-}
-#index_om_gaarden {
-    text-align: center;
-    margin: 20px;
-}
-
-#index_om_gaarden p a {
-    color: #626d21d2;
 }
