@@ -521,25 +521,23 @@ textarea:hover {
         font-size: 22px;
         margin-top: 0px;
     }
-    
+
     /* For å få produktboksene + pricetags til å se bra ut på telefon */
     .produkt_container {
         display: unset;
-        max-width: 70%;
+        max-width: 100%;
         margin: 20px;
     }
-    .produkt_bilde {
+    .produkt_container img {
         width: 100%;
-  
     }
     .produkt_container p {
         padding: 10px;
     }
 
-    #main#main_produkter{
+    #main#main_produkter {
         margin: 20px;
     }
-    
 
     span.anchor {
         height: 250px;
